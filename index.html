@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tic Tac Toe</title>
+  </head>
+  <body>
+    <div class="AppContainer">
+      <div class="AppContainer__content">
+        <div class="NewGame__container">
+          <header class="NewGame__header">
+            <img class="Game__logo" src="" alt="Game Logo" />
+          </header>
+
+          <div class="NemGame__playerMarkContainer">
+            <div class="PlayerMarkContainer">
+              <header class="PlayerMarkContainer__header">
+                <p class="PlayerMarkContainer__title">Pick player 1's mark</p>
+              </header>
+              <div class="PlayerMarkContainer__content">
+                <div class="PlayerMarkContainer__markContainer">
+                  <ul class="PlayerMarkContainer__markList">
+                    <li class="MarkItem">
+                      <span class="MarkItem__wrapper"
+                        ><img class="MarkItem__icon" src="" alt="X Mark icon"
+                      /></span>
+                    </li>
+
+                    <li class="MarkItem SelectedMark">
+                      <span class="MarkItem__wrapper"
+                        ><img class="MarkItem__icon" src="" alt="O Mark icon"
+                      /></span>
+                    </li>
+                  </ul>
+                </div>
+                <p class="PlayerMarkContainer__description">
+                  Remember: X goes first
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="NewGame__opponentContainer">
+            <ul class="OpponentContainer__opponentList">
+              <li class="OpponentItem">
+                <button
+                  id="opponent-btn-cpu"
+                  type="button"
+                  class="OpponentBtn OpponentBtn--cpu"
+                >
+                  New Game (vs CPU)
+                </button>
+              </li>
+              <li class="OpponentItem">
+                <button
+                  id="opponent-btn-player"
+                  type="button"
+                  class="OpponentBtn OpponentBtn--player"
+                >
+                  New Game (vs player)
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Game board start -->
+        <!-- x/o icon -->
+        turn X (You)
+        <!-- Your score -->
+        Ties
+        <!-- Ties score -->
+        X (CPU)
+        <!-- CPU score -->
+        Oh no, you lost You won! Player
+        <!-- 1/2 -->
+        wins!
+        <!-- x/o icon -->
+        takes the round Round tied Restart game? Quit Next round No, cancel Yes,
+        restart
+        <!-- Game board end -->
+      </div>
+    </div>
+  </body>
+</html>
