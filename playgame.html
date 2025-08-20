@@ -1,24 +1,26 @@
 <div class="Game__container">
   <header class="Game__header">
-    <img class="GameBoardHeader__logo Game__logo" src="" alt="Game Logo" />
+    <img class="GameHeader__logo Game__logo" src="" alt="Game Logo" />
 
-    <div class="GameBoardHeader__currentPlayerContainer">
-      <span class="GameBoardHeader__currentPlayerMarkWrapper"
+    <div class="GameHeader__currentPlayerContainer">
+      <span class="GameHeader__currentPlayerMarkWrapper"
         ><img
-          class="GameBoardHeader__currentPlayerMarkIcon"
+          class="GameHeader__currentPlayerMarkIcon"
           alt="Current Player Mark Icon"
       /></span>
-      <p class="GameBoardHeader__turnText">Turn</p>
+      <p class="GameHeader__turnText">Turn</p>
     </div>
 
     <div class="GoamBoardHeader__restartContainer">
-      <button class="GameBoardHeader__restartBtn" type="button"></button>
+      <button class="GameHeader__restartBtn" type="button"></button>
     </div>
   </header>
 
   <div class="Game__content">
     <div class="Game__gameBoardContainer">
-      <div class="GameBoard__tile"></div>
+      <div class="GameBoard__tile">
+        <img src="" alt="Player mark icon" />
+      </div>
     </div>
 
     <div class="Game__scoresContainer">
@@ -44,19 +46,43 @@
   </div>
 </div>
 
-<!-- Game board start -->
-<!-- x/o icon -->
+<div class="Popup Results__container--singleWinner">
+  <div class="Results__messageContainer">
+    <p class="Results__messageText"></p>
+  </div>
+  <div class="Results__winnerContainer">
+    <img class="Results__winnerMarkIcon" />
+    <p class="Results__text">takes the round</p>
+  </div>
+  <div class="Results__actionButtonsContainer">
+    <button class="Results__actionButton" type="button">Quit</button>
+    <button class="Results__actionButton--primary" type="button">
+      Next round
+    </button>
+  </div>
+</div>
 
-turn X (You)
-<!-- Your score -->
-Ties
-<!-- Ties score -->
-X (CPU)
-<!-- CPU score -->
+<div class="Popup Results__container--tied">
+  <div class="Results__winnerContainer">
+    <p class="Results__text">round tied</p>
+  </div>
+  <div class="Results__actionButtonsContainer">
+    <button class="Results__actionButton" type="button">Quit</button>
+    <button class="Results__actionButton--primary" type="button">
+      Next round
+    </button>
+  </div>
+</div>
 
-Oh no, you lost You won! Player
-<!-- 1/2 -->
-wins!
-<!-- x/o icon -->
-takes the round Round tied Restart game? Quit Next round No, cancel Yes, restart
-<!-- Game board end -->
+<div class="Popup Restart__container">
+  <div class="Restart__restartContainer">
+    <p class="Restart__text">Restart game?/p></p>
+  </div>
+
+  <div class="Restart__actionButtonsContainer">
+    <button class="Restart__actionButton" type="button">No, cancel</button>
+    <button class="Restart__actionButton--primary" type="button">
+      Yes, restart
+    </button>
+  </div>
+</div>
